@@ -1,0 +1,53 @@
+/*media queries home*/
+
+@media screen and (min-width: 576px) {
+
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 2fr 0.3fr;
+
+        grid-template-areas:
+            "header header"
+            "cosita section-dos"
+            "footer footer";
+        gap: 5px;
+    }
+
+    .section-dos {
+        justify-content: flex-end;
+        align-items: center;
+        ul {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            li a img {
+                height: 30px;
+            }
+        }
+    }
+
+    .cosita {
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+
+/*Stranger people*/
+.parrafo1 {
+    padding: 0 10%;
+    color: $color-textos;
+}
+
+/*estilos contacto*/
+
+.commentsForm{
+    color: $color-textos;
+    @extend %flex_1;
+}
+
+.formulario{
+    color: $color-textos;
+    @extend %flex_1
+}
+}
